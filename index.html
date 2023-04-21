@@ -21,6 +21,7 @@
         <div id="cart_list">
 
         </div>
+        <button class="empty_cart" id="empty_cart">Empty Cart</button>
       </div>
     </nav>
   <header>
@@ -28,7 +29,13 @@
   </header>
   <main>
     <h3>Todos Nuestros Productos</h3>
-    <div class="principal_container" id="products_container"></div>
+    <div class="principal_container" id="products_container">
+    </div>
+    <div class="modal_container_element" id="modal_container">
+      <i class="close_modal">X</i>
+      <div class="modal_element" id="modal">
+      </div>
+    </div>
   </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>

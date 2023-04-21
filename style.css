@@ -90,7 +90,7 @@ main h3{
 
 .product_container:hover{
   transform: translateY(-6px);
-  box-shadow: 5px 5px 15px 0px #b3afaf;
+  box-shadow: 5px 5px 15px 0px #d6d5d5;
 }
 
 .product_container_img img{
@@ -106,11 +106,13 @@ height: 360px;
 }
 
 .product_container_img p{
+  display: flex;
   font-size: 18px;
   margin-bottom: 20px;
   margin-left: 10px;
-  width: 200px;
-  max-height: 200px;
+  max-height: 40px;
+  max-width: 200px;
+  
 }
 
 .product_container_button{
@@ -126,14 +128,122 @@ height: 360px;
   border: transparent;
   color: white;
   width: 90px;
- border-radius: 40px;
- cursor: pointer;
- transition: 0.5s;
- margin-right: 10px;
- margin-bottom: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.details_button{
+  display: flex;
+  justify-content: center;
+  background-color: #274671;
+  padding: 7px;
+  border: transparent;
+  color: white;
+  width: 90px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 15px;
+  margin-bottom: 20px;
 }
 
 .cart_button:hover{
   transform: translateY(-3px);
 }
 
+.modal_container_element{
+background-color: #434343;
+height: 300px;
+height: 300px;
+position: fixed;
+}
+
+.cart_product img{
+
+  padding-top: 20px;
+  width: 70%;
+  height: 70%;
+}
+
+#cart_list button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EB4A5A;
+  padding: 7px;
+  border: transparent;
+  color: white;
+  width: 80px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  height: 30px;
+  font-size: 14px;
+}
+
+#cart_list p:nth-child(2){
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+#cart_list p:nth-child(3){
+font-weight: bold;
+margin-left: 10px;
+font-size: 18px;
+}
+
+#cart_list p:nth-child(4){
+  margin: 10px;
+  font-size: 16px;
+}
+
+
+.cart_product_button{
+  display: flex;
+  justify-content: right;
+}
+
+.empty_cart{
+  background-color: #274671;
+  border: transparent;
+  color: white;
+  width: 120px;
+  min-height: 30px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.modal_container_element{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 70%;
+  min-height: 70%;
+  background-color: white;
+  box-shadow: 3px 3px 15px -3px #434343;
+  left: 15%;
+  bottom: 15%;
+  display: none;
+}
+
+.show_modal{
+  display: block;
+}
+
+.close_modal{
+  display: flex;
+  justify-content: right;
+  margin: 8px;
+  padding-right: 7px;
+  font-size: 16px;
+  cursor: pointer;
+}
